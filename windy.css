@@ -1,0 +1,185 @@
+body {
+    font-family: 'Indie Flower', cursive;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.gif-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 15px; /* Space between GIF and message */
+}
+
+.small-gif {
+    width: 300px; /* Adjust size */
+    height: auto; /* Keep aspect ratio */
+    background-color: transparent;
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+
+.white-glow {
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8), 
+                 0 0 12px rgba(255, 255, 255, 0.6), 
+                 0 0 16px rgba(255, 255, 255, 0.4);
+}
+
+.neon-white-glow {
+    text-shadow: 0 0 10px #ffffff, 
+                 0 0 20px #ffffff, 
+                 0 0 30px #ffffff;
+}
+
+@keyframes whiteGlowPulse {
+    0% {
+        text-shadow: 0 0 8px #ffffff, 0 0 16px rgba(255, 255, 255, 0.8);
+    }
+    50% {
+        text-shadow: 0 0 12px #ffffff, 0 0 24px rgba(255, 255, 255, 1);
+    }
+    100% {
+        text-shadow: 0 0 8px #ffffff, 0 0 16px rgba(255, 255, 255, 0.8);
+    }
+}
+
+.animated-white-glow {
+    animation: whiteGlowPulse 1.5s infinite alternate;
+}
+
+.short-message{
+    font-family: 'Indie Flower', cursive;
+    color: white;
+    font-size: 20px;
+}
+
+.hidden-message { 
+    font-family: 'Indie Flower', cursive;
+    font-size: 35px !important;
+    margin-bottom: 5px;
+}
+
+.small-message {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    color: white; 
+    text-align: center;
+    margin-top: 10px;
+    display: none; 
+    margin-top: 1px;
+}
+
+.message-box {
+    font-family: 'Indie Flower', cursive;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 32px;
+    color: white;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 1s ease-in-out;
+    min-width: 250px;
+    max-width: 80%;
+}
+
+.valentine-box{
+    font-family: 'Indie Flower', cursive;
+    font-size: 32px;
+    color: white;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeInBackground{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-bg {
+    animation: fadeInBackground 0.7s ease-in-out;
+}
+
+.btn {
+    font-family: 'Indie Flower', cursive;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 21px;
+    color: white;
+    background: rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.yes-btn {
+    background: #ffb6c1;
+    color: white;
+}
+
+.yes-btn:hover {
+    background: #ff5c8d;
+}
+
+.no-btn {
+    background: #ddd;
+    color: black;
+    position: absolute;
+}
+
+.hidden-message {
+    display: none;
+    font-size: 22px;
+    margin-top: 20px;
+    color: white;
+    font-style: italic;
+}
+
+/* Valentine Box Hidden Initially */
+.valentine-box {
+    display: none;
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

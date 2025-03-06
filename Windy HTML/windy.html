@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To the Love of my Life</title>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/windy.css">
+</head>
+<body>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="/Windy HTML/music/i wrote a love song with my wife.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    
+
+    <div class="gif-container">
+        <img id="bgImage" class="small-gif" src="images/milkmocha5.gif" alt="Cute Windy">
+    </div>
+
+    <img id="bgImage" class="background-image">
+
+    <div class="message-box white-glow" id="message">
+        Thank you for being there for me always
+    </div>
+    <p class="short-message white-glow" id="shortMessage">di mo ako iniiwan kahit minsan nahihirapan ka</p>
+    <button class="btn" onclick="nextMessage()">Next</button>
+
+    <div class="valentine-box" id="valentineBox">
+        <p class="question white-glow">Will you be my Valentine forever?</p>
+        <div class="buttons">
+            <button class="btn yes-btn animated-white-glow" onclick="showLoveMessage()">Yes</button>
+            <button class="btn no-btn neon-white-glow" id="noBtn">No</button>
+        </div>
+    </div>
+
+    <p class="hidden-message neon-white-glow" id="finalMessage">SABI NA BARBIE IHHHHHHHHHH!!!!!💕</p>
+    <p class="small-message animated-white-glow" id="smallMessage">Thank you for being with me, you are the best thing that has happened to me and you are the best thing i've ever received <br>i love you so much more than you'll ever know.💕</p>
+
+    <script src="/windy.js"></script>
+</body>
+</html>
